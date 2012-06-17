@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/notification_list_background"
+	android:visibility="visible" android:padding="20dp"
+	android:layout_gravity="center">
+	<LinearLayout android:layout_width="fill_parent"
+		android:id="@+id/linearLayout1" android:layout_height="wrap_content">
+		<Button android:text="@string/set_alarm" android:layout_height="wrap_content"
+			android:id="@+id/buttonTimeDate" android:background="@drawable/content_default_bg"
+			android:layout_width="wrap_content" android:layout_weight="1"
+			android:gravity="center|left" android:onClick="onBtnTimeDateClick"
+			android:singleLine="true" android:ellipsize="end"></Button>
+		<ToggleButton android:text="ToggleButton"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:id="@+id/toggleButtonStatus" android:background="@drawable/content_default_bg"
+			android:button="@drawable/button_toggle"
+			android:onClick="onBtnStatusClick" android:enabled="false"></ToggleButton>
+	</LinearLayout>
+	<Button android:hint="@string/add_description"
+		android:layout_height="wrap_content" android:id="@+id/buttonAddDescription"
+		android:layout_marginTop="20dp" android:background="@drawable/content_default_bg"
+		android:layout_width="fill_parent" android:gravity="center|left"
+		android:onClick="onBtnAddDescriptionClick" android:autoLink="none" />
+
+	<EditText android:inputType="textMultiLine" android:id="@+id/editDescription"
+		android:layout_height="wrap_content" android:visibility="gone"
+		android:layout_width="fill_parent">
+		<requestFocus></requestFocus>
+	</EditText>
+	<LinearLayout android:layout_width="fill_parent"
+		android:id="@+id/linearLayout2" android:layout_height="wrap_content"
+		android:layout_marginTop="5dp">
+		<Button android:text="@string/save" android:id="@+id/buttonSetOrSave"
+			android:background="@drawable/content_default_bg"
+			android:layout_weight="1" android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:enabled="false"
+			android:onClick="onBtnSetOrSaveClick"></Button>
+		<Button android:text="@string/send" android:layout_height="wrap_content"
+			android:id="@+id/buttonSendOrCancel" android:background="@drawable/content_default_bg"
+			android:layout_width="fill_parent" android:layout_weight="1"
+			android:enabled="false" android:onClick="onBtnSendOrCancelClick"></Button>
+	</LinearLayout>
+	<!-- LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/linearLayout3" android:layout_weight="1" android:gravity="bottom">
+		<TextView android:text="TextView" android:layout_weight="1" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/textView1" android:gravity="top" android:visibility="invisible"></TextView>
+		<ImageView android:layout_height="wrap_content" android:src="@drawable/cat_off"
+	android:layout_width="wrap_content" android:id="@+id/view1"></ImageView>
+	</LinearLayout -->
+		
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.singularity.clover.babysitter.widgets.DateSlider.SliderContainer
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.singularity.clover.babysitter"
+    android:id="@+id/dateSliderContainer"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <com.singularity.clover.babysitter.widgets.DateSlider.ScrollLayout
+        style="@style/Scroller"
+        app:labelerClass="com.singularity.clover.babysitter.widgets.DateSlider.labeler.MonthYearLabeler"
+        app:labelerFormat="%tb %tY"
+        app:childWidth="90dp"
+        />
+    <com.singularity.clover.babysitter.widgets.DateSlider.ScrollLayout
+        style="@style/Scroller"
+        app:labelerClass="com.singularity.clover.babysitter.widgets.DateSlider.labeler.DayDateLabeler"
+        app:labelerFormat="%td %ta"
+        app:childWidth="45dp"
+        />
+    <include layout="@layout/dialogbuttons"/>
+</com.singularity.clover.babysitter.widgets.DateSlider.SliderContainer>

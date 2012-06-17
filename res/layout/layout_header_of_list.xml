@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="wrap_content" android:background="@drawable/list_header_background">
+	<Button android:layout_width="wrap_content" android:id="@+id/buttonLogo"
+		android:layout_height="wrap_content" android:layout_centerVertical="true"
+		android:layout_alignParentLeft="true" android:layout_marginLeft="21dp"
+		android:background="@drawable/button_logo" android:onClick="onBtnLogoClick"></Button>
+	<Button android:layout_width="wrap_content" android:id="@+id/buttonAdd"
+		android:layout_height="wrap_content" android:layout_alignBottom="@+id/buttonLogo"
+		android:layout_centerVertical="true" android:layout_alignParentRight="true"
+		android:layout_marginRight="24dp" android:background="@drawable/button_add"
+		android:onClick="onAddButtonClick"></Button>
+	<TextView android:layout_width="wrap_content" android:text="TextView"
+		android:layout_height="wrap_content" android:layout_alignTop="@+id/buttonLogo"
+		android:layout_toRightOf="@+id/buttonLogo" android:layout_marginLeft="14dp"
+		android:id="@+id/tutorialText" android:textColor="#2b2b2b" android:visibility="gone"
+		android:layout_marginTop="5dp" android:ellipsize="end" android:layout_marginRight="10dp"></TextView>
+	<ImageView  android:layout_height="wrap_content" android:id="@+id/sayline"
+		android:layout_width="wrap_content" android:src="@drawable/lean_line"
+		 android:layout_toRightOf="@+id/buttonLogo"
+		 android:layout_marginTop="20dp" android:visibility="gone"
+		 />
+
+</RelativeLayout>

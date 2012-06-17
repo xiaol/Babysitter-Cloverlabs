@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/startup_background_color">
+	<TextView android:id="@+id/loadingText" android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true" android:layout_marginBottom="94dp"
+		android:text="@string/loading" android:textColor="@color/cycle"></TextView>
+	<TextView android:id="@+id/copyrightText"
+		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_alignTop="@+id/loadingText"
+		android:layout_centerHorizontal="true" android:layout_marginTop="38dp"
+		android:text="@string/copyright" android:textColor="@color/cycle"></TextView>
+	<ImageView android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:id="@+id/view1"
+		android:layout_above="@+id/loadingText"
+		android:layout_centerHorizontal="true" android:layout_marginBottom="40dp"
+		android:src="@drawable/logo_cat" />
+
+</RelativeLayout>

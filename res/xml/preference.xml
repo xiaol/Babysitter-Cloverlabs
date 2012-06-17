@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<RingtonePreference android:ringtoneType="all"
+		android:title="@string/set_alarm_ringtone" android:key="@string/ringtone_preference_key"
+		android:showSilent="false"></RingtonePreference>
+	<CheckBoxPreference android:key="@string/alarm_predefined_key"
+		android:title="@string/activie_pre_define_alarm" android:defaultValue="true"></CheckBoxPreference>
+	<ListPreference android:key="@string/set_delay_time_key"
+		android:title="@string/set_delay_time" android:entries="@array/snooze_time_array"
+		android:entryValues="@array/snooze_time_values_array"
+		android:dialogTitle="@string/set_delay_time" android:defaultValue="15"></ListPreference>
+	<Preference android:summary="@string/singularity_labs" android:title="@string/about" android:key="@string/about_key"></Preference>
+
+</PreferenceScreen>

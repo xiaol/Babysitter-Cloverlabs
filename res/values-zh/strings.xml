@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">宝贝乖</string>
+    <string name="loading">初始化中...</string>
+        <string name="dialog_title">宝贝乖</string>
+    <string name="copyright">宝贝乖@奇点实验室</string>
+    
+    <!-- 修改这些值要修改global中对应值 -->
+    <string name="prefix_sms">#宝贝乖#</string>
+    <string name="suffix_sms">"#尾巴#"</string>
+    
+    <string name="from_address">来自:\u0020%1$s</string>
+    <string name="to_address">已发送</string>
+    
+    <string name="set_alarm">设置闹钟</string>
+    <string name="set">设置</string>
+    <string name="cancel">取消</string>
+    <string name="save">保存</string>
+    <string name="send">发送</string>
+    <string name="done">完成</string>
+    <string name="delete">删除</string>
+    <string name="stop_alarm">停止响铃</string>
+    <string name="two_hours_later">延后2小时</string>
+    <string name="six_hours_later">延后6小时</string>
+    <string name="one_day_later">明天</string>
+    <string name="alarm">闹钟</string>
+    <string name="active">开启</string>
+    <string name="delay">暂缓</string>
+    
+    <string name="add_description">添加描述</string>
+    
+    <string name="dateSliderTitle">选择的日期</string>
+    <string name="set_alarm_ringtone">闹铃铃声</string>
+    
+    <string name="activie_pre_define_alarm">预置闹钟</string>
+    <string name="set_delay_time">延后时间</string>
+    <string name="minutes">分钟</string>
+    <string name="description_snooze_alarm">%1$s 后闹钟</string>
+    
+    <string name="tutorial_disable_pre_alarm">通过设置（点我）停用这个闹钟</string>
+    
+    <string name="about">关于</string>
+    <string name="singularity_labs">奇点实验室</string>
+    
+    <string name="long_click">长摁闹钟可以直接编辑</string>
+</resources>

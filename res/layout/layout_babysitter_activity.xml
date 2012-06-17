@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/notification_list_background">
+	<ListView android:layout_alignParentLeft="true"
+		android:layout_width="fill_parent" android:id="@android:id/list"
+		android:divider="@color/transparent" android:layout_height="wrap_content"
+		android:background="@color/transparent" android:cacheColorHint="#f8f8f8"
+		android:layout_margin="7dp" android:layout_alignParentTop="true"
+		android:scrollbarFadeDuration="1000" android:fastScrollEnabled="true"></ListView>
+	<LinearLayout android:id="@+id/deletePanel"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:layout_alignParentBottom="true" android:visibility="gone">
+
+		<Button android:layout_width="wrap_content" android:text="@string/delete"
+			android:id="@+id/buttonDelete" android:background="@drawable/content_default_bg"
+			android:layout_height="wrap_content" 
+			android:onClick="onDeleteButtonClick" android:layout_weight="1"></Button>
+		<Button android:layout_width="wrap_content" android:text="@string/cancel"
+			android:id="@+id/buttonDeleteCancel" android:background="@drawable/content_default_bg"
+			android:layout_height="wrap_content" 
+		 android:onClick="onDeleteCancelButtonClick"
+			android:layout_weight="1"></Button>
+	</LinearLayout>
+
+</RelativeLayout>

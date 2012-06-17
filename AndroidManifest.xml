@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.singularity.clover.babysitter"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="7" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
+    <uses-permission android:name="android.permission.READ_SMS"></uses-permission>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"></uses-permission>
+    <!-- 测试用，发布时保证未写入SMS后注释掉 -->
+    <uses-permission android:name="android.permission.WRITE_SMS"></uses-permission >
+    <uses-permission android:name="android.permission.RECEIVE_SMS"></uses-permission>
+    
+    <uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>
+
+    <application android:icon="@drawable/launcher_cat" android:label="@string/app_name"
+    	android:name=".BabysitterApplication" android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:name=".activity.BabysitterActivity"
+                  android:label="@string/app_name">
+        </activity>
+        
+        <!-- 测试用 -->
+        <receiver android:name=".sms.SmsReceiver" android:exported="true" > 
+		  <intent-filter  android:priority="999"> 
+		    <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+		  </intent-filter> 
+		</receiver >
+
+		<receiver android:name=".notification.NotificationReceiver" android:exported="true">
+			<intent-filter >
+			 <action android:name="android.intent.action.BOOT_COMPLETED" ></action>
+			 <action android:name="com.singualrity.clover.babysitter.notification.RING"></action>
+			</intent-filter>
+		</receiver>
+		<activity android:name=".activity.BabysitterSplashActivity">
+		     <intent-filter>
+              <action android:name="android.intent.action.MAIN" />
+              <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
+		</activity>
+		<activity android:name=".activity.NotificationActivity"
+			android:theme="@android:style/Theme.Dialog"></activity>
+		<activity android:name="BabysitterPreference"></activity>
+		<activity android:name=".activity.WakeupActivity"></activity>
+		<service android:name=".activity.KeepMeAliveService"></service>
+        
+
+    </application>
+</manifest>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.singularity.clover.babysitter.drag.DragLayer
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.singularity.clover.babysitter"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" 
+  android:background="@drawable/notification_panel_background">
+  
+  <TextView android:id="@+id/alertPanelText"
+  	android:layout_width="wrap_content" android:layout_height="wrap_content"
+  	app:x="20dp" app:y="20dp" android:textColor="#2b2b2b"
+  	/>
+  <ImageView android:id="@+id/indicator0"
+  	android:layout_width="100dp" android:layout_height="2dp"
+  	android:background="@drawable/divider"
+  	app:x="20dp" app:y="25dp" />
+  	
+  <ImageView android:id="@+id/indicator1"
+  	android:layout_width="60dp" android:layout_height="2dp"
+  	android:background="@drawable/indicator"
+  	app:x="40dp" app:y="60dp" />
+  	
+  <ImageView android:id="@+id/indicator2"
+  	android:layout_width="60dp" android:layout_height="2dp"
+  	android:background="@drawable/indicator"
+  	app:x="40dp" app:y="90dp" />
+  	
+  <ImageView android:id="@+id/indicator3"
+  	android:layout_width="60dp" android:layout_height="2dp"
+  	android:background="@drawable/indicator"
+  	app:x="40dp" app:y="110dp" android:visibility="gone"/>
+  	
+  	
+  <ImageView android:id="@+id/slipperTracker"
+  	android:layout_width="wrap_content" android:layout_height="wrap_content"
+  	android:background="@drawable/slipper_tracker"
+  	android:src="@drawable/slipper_tracker_transparent"
+  	app:x="10dp" app:y="10dp" />
+  <ImageView android:id="@+id/slipper"
+  	android:layout_width="wrap_content" android:layout_height="wrap_content"
+  	android:src="@drawable/panel_slipper"
+  	app:x="30dp" app:y="10dp" />
+  	
+  <TextView android:id="@+id/textIndicator1" android:hint="2 hours"
+  	android:layout_width="wrap_content" android:layout_height="wrap_content"
+  	android:singleLine="true" android:textColor="#777777"
+	android:drawableBottom="@drawable/line_indicator"
+  	app:x="20dp" app:y="40dp"
+  	/>
+  
+  <TextView android:id="@+id/textIndicator2" android:hint="6 hours"
+  	android:layout_width="wrap_content" android:layout_height="wrap_content"
+  	android:singleLine="true" android:textColor="#777777"
+	android:drawableBottom="@drawable/line_indicator"
+  	app:x="20dp" app:y="40dp"
+  	/>
+  	
+  <TextView android:id="@+id/textIndicator3" android:hint="1 day"
+  	android:layout_width="wrap_content" android:layout_height="wrap_content"
+  	android:singleLine="true" android:textColor="#777777"
+	android:drawableBottom="@drawable/line_indicator"
+  	app:x="20dp" app:y="40dp"
+  	/>
+    
+</com.singularity.clover.babysitter.drag.DragLayer>

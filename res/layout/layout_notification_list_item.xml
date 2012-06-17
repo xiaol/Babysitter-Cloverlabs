@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent" >
+	<View android:layout_width="fill_parent" android:id="@+id/leftMargin1"
+		android:layout_height="fill_parent" android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true" android:layout_weight="7"></View>
+	<View android:layout_width="fill_parent" android:id="@+id/leftMargin2"
+		android:layout_height="fill_parent" android:layout_alignParentTop="true"
+		android:layout_toRightOf="@+id/leftMargin1" android:layout_weight="7"></View>
+
+	<RelativeLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/leftMargin2" android:layout_toLeftOf="@+id/rightMargin1"
+		android:layout_alignWithParentIfMissing="true" android:layout_weight="1"
+		android:background="@drawable/list_item_gray_bg" android:id="@+id/notificationItem"
+		android:clickable="true">
+		<TextView android:text="TextView" android:textSize="19sp"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+			android:layout_marginLeft="20dp" android:layout_marginTop="12dp"
+			android:id="@+id/textNotificationTime" android:textColor="#ffffffff"></TextView>
+		<TextView android:text="TextView" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_below="@+id/textNotificationTime"
+			android:layout_alignLeft="@+id/textNotificationTime" android:id="@+id/textNotificationDate"
+			android:textColor="@color/dark_gray" android:textSize="10sp"></TextView>
+		<TextView android:id="@+id/textNotificationDescription"
+			android:textColor="@color/dark_gray" android:text="TextView"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignBaseline="@+id/textNotificationDate"
+			android:layout_alignBottom="@+id/textNotificationDate"
+			android:layout_centerHorizontal="true" android:ellipsize="end"
+			android:singleLine="true" android:layout_marginRight="15dp"
+			android:layout_marginLeft="10dp" android:textSize="12sp"
+			android:layout_toRightOf="@+id/textNotificationDate"></TextView>
+		<TextView android:text="TextView" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_alignBottom="@+id/textNotificationTime"
+			android:layout_alignBaseline="@+id/textNotificationTime"
+			android:layout_alignLeft="@+id/textNotificationDescription"
+			android:layout_marginLeft="30dp" android:id="@+id/textNotificationAddress"
+			android:ellipsize="end" android:singleLine="true" android:maxWidth="100dp"
+			android:visibility="gone" android:textColor="@color/dark_gray"
+			android:textSize="12sp"></TextView>
+		
+	</RelativeLayout>
+
+	<View android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:id="@+id/rightMargin1" android:layout_alignParentTop="true"
+		android:layout_toLeftOf="@+id/rightMargin2" android:layout_weight="7" />
+
+	<View android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:id="@+id/rightMargin2" android:layout_alignParentTop="true"
+		android:layout_alignParentRight="true" android:layout_weight="7" />
+
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Schrodinger\'s\nCat</string>
+    <string name="dialog_title">Schrodinger\'s Cat</string>
+    <string name="loading">Loading...</string>
+    <string name="copyright">Schrodinger\'s Cat@Singularity labs</string>
+    
+    <!-- 修改这些值要修改global中对应值 -->
+    <string name="prefix_sms">#Schrodinger\'s Cat#</string>
+    <string name="suffix_sms">"#tail#"</string>
+    
+    <string name="from_address">From:\u0020%1$s</string>
+    <string name="to_address">Sent</string>
+    
+    <string name="set_alarm">Set Alarm</string>
+    <string name="set">Set</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="send">Send</string>
+    <string name="done">Done</string>
+    <string name="delete">Delete</string>
+    <string name="stop_alarm">Stop alarm</string>
+    <string name="two_hours_later">Snooze 2 hours</string>
+    <string name="six_hours_later">Snooze 6 hours</string>
+    <string name="one_day_later">Tomorrow</string>
+    <string name="alarm">Alarm</string>
+    <string name="active">Active</string>
+    <string name="delay">Delay</string>
+    
+    <string name="add_description">Add description</string>
+    
+    <string name="dateSliderTitle">Selected date</string>
+    <string name="set_alarm_ringtone">Alarm ringtone</string>
+    <string name="ringtone_preference_key">ringtone_preference</string>
+    
+    <string name="activie_pre_define_alarm">Default alarm</string>
+    <string name="set_delay_time">Snooze duration</string>
+    <string name="alarm_predefined_key">alarm_predined</string>
+    <string name="set_delay_time_key">delay_time_key</string>
+    <string name="description_snooze_alarm">Alarm snooze\u0020%1$s</string>
+    
+    <string name="tutorial_disable_pre_alarm">Disable this default alarm in setting(click me)</string>
+    
+    <string name="minutes">minutes</string>
+    
+    <string name="about">About</string>
+    <string name="singularity_labs">Singularity labs</string>
+    <string name="website">http://6leaves.com</string>
+    <string name="about_key">about_key</string>
+    
+    <string name="long_click">Long click notification to edit alarm directly</string>
+</resources>

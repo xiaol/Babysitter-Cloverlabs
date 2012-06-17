@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/notification_panel_background"
+	android:paddingLeft="3dp" android:paddingTop="3dp" android:paddingBottom="3dp" 
+	android:paddingRight="5dp">
+	<TextView android:id="@+id/textView1" android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_height="wrap_content" android:text="@string/dialog_title"
+		android:layout_width="fill_parent" android:background="@drawable/title_back"
+		android:padding="20dp"></TextView>
+	<TextView android:layout_width="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_height="wrap_content" android:text="TextView"
+		android:id="@+id/textAlertContent" android:padding="10dp" android:textColor="@color/black" android:layout_weight="1"></TextView>
+	<LinearLayout android:id="@+id/linearLayout1"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="1"
+			android:background="@drawable/content_default_bg" android:text="@string/active"
+			android:id="@+id/buttonAlertActive"></Button>
+		<Button android:layout_weight="1" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:background="@drawable/content_default_bg"
+			android:text="@string/delay" android:id="@+id/buttonAlertDelay"></Button>
+	</LinearLayout>
+
+
+
+</LinearLayout>
